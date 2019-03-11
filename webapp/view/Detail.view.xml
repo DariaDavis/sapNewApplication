@@ -1,0 +1,56 @@
+<mvc:View 
+	xmlns:core="sap.ui.core" 
+	xmlns:mvc="sap.ui.core.mvc" 
+	xmlns="sap.m"
+	controllerName="com.sap.build.standard.newAppPrototype.controller.Detail" 
+	xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:f="sap.ui.layout.form">
+	<Page
+	title="{i18n>Employee}">
+		<content>
+			<f:SimpleForm id="SimpleFormDisplay354wide"
+				editable="false"
+				layout="ResponsiveGridLayout"
+				title="{i18n>More}"
+				labelSpanXL="4"
+				labelSpanL="3"
+				labelSpanM="4"
+				labelSpanS="12"
+				adjustLabelSpan="false"
+				emptySpanXL="0"
+				emptySpanL="4"
+				emptySpanM="0"
+				emptySpanS="0"
+				columnsXL="2"
+				columnsL="1"
+				columnsM="1"
+				singleContainerFullSize="false">
+				<f:content>
+					<Label text="{i18n>ID}" />
+					<Text text="{ID}" id="Id" />
+					<Label text="{i18n>Name}" />
+					<Text text="{FLName}" />
+					<Label text="{i18n>Position}" />
+					<Text text="{Position}"/>
+					<Label text="{i18n>Age}" />
+					<Text text="{Age}"/>
+					<Label text="{i18n>Age}" />
+					<Input id="AGE" value="{Age}" width="100px" />
+					<Label text="{i18n>Salary} USD" />
+					<Input id="SALARY" value="{Salary}"	width="100px" /> 
+					
+				</f:content>
+			</f:SimpleForm>
+			<Label id="Txt" text="{i18n>Doyouwanttosaveit}?" visible="false"/>
+			<Label id="Txt2" text="{i18n>Areyousure}?" visible="false"/>
+		</content>
+		<footer>
+	        <OverflowToolbar>
+	            <content>
+	                <Button type="Accept" text="{i18n>Submit}"  press="_OnSavePress"/>
+	                <Button type="Accept" text="{i18n>Delete}"  press="_OnDeletePress"/>
+	             </content>
+	        </OverflowToolbar>
+	    </footer>
+	</Page>
+</mvc:View>
